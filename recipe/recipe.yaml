@@ -1,5 +1,5 @@
 context:
-  version: "0.3.11"
+  version: "0.3.12"
 
 package:
   name: fastbencode
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fastbencode/fastbencode-${{ version }}.tar.gz
-  sha256: 7e2be45bfe81167cd79986698a2cf270eaf61add5b1bc711378c2bb3f05396d5
+  sha256: a0d403f3122aae24d34d2682665e505925bba7a6d3246da482b7a2a9cdcea8fe
 
 build:
-  number: 1
+  number: 0
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
